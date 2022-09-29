@@ -31,7 +31,7 @@
 #include "common/TransportAddress.h"
 
 #if defined(HAVE_GCC_TR1) || defined(HAVE_MSVC_TR1)
-namespace std { namespace tr1 {
+namespace std {
 #else
 namespace __gnu_cxx {
 #endif
@@ -98,7 +98,6 @@ template<> struct hash<TransportAddress> : std::unary_function<TransportAddress,
 
 }
 #if defined(HAVE_GCC_TR1) || defined(HAVE_MSVC_TR1)
-}
 #endif
 
 #endif

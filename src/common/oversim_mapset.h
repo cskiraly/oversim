@@ -29,13 +29,13 @@
 
 #if defined(HAVE_GCC_TR1)
 
-#include <tr1/unordered_map>
-#include <tr1/unordered_set>
+#include <unordered_map>
+#include <unordered_set>
 
-#define UNORDERED_MAP std::tr1::unordered_map
-#define UNORDERED_MULTIMAP std::tr1::unordered_multimap
-#define UNORDERED_SET std::tr1::unordered_set
-#define HASH_NAMESPACE std::tr1
+#define UNORDERED_MAP std::unordered_map
+#define UNORDERED_MULTIMAP std::unordered_multimap
+#define UNORDERED_SET std::unordered_set
+#define HASH_NAMESPACE std
 
 #elif defined(HAVE_MSVC_TR1)
 
